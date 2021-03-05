@@ -8,6 +8,15 @@
 
 (def feed-data (client/get rss-feed))
 
+(defn cnv
+  "convert transformer
+  decomplects the idea of transforming the data depending on the data"
+  ([f x](cnv f x nil))
+  ([f x tfx]
+   (if tfx
+     (f (tfx x))
+     (f x))))
+
 (def feed-str (:body feed-data))
 
 (defn zip-str [s]
