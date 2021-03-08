@@ -19,12 +19,13 @@
 
 (def feed-str (:body feed-data))
 
-(defn zip-str [s]
-  (let [res (xml/parse s)]
-    (if []))
-  (zip/xml-zip))
+(comment
+  (defn zip-str [s]
+    (let [res (xml/parse s)]
+      (if []))
+    (zip/xml-zip)))
 
-(defn -main [& args]
+(defn main [& args]
   (println "Hello World!"))
 
 (def xml "<?xml version=\"1.0\" encoding=\"UTF-8\"?>

@@ -2,11 +2,9 @@
  :deps {ring/ring-core {:mvn/version "1.9.1"}
         clj-http/clj-http {:mvn/version "3.12.0"}
         com.rpl/specter {:mvn/version "1.1.3"}}
- :aliases {;; clj -X:run to run the basic ish
-           :run
-           {:exec-fn ross.core/-main}
+ :aliases {:run
+           {:exec-fn ross.core/main}
 
-           ;; clj -X:uberjar to compile an uberjar
            :uberjar
            {:extra-deps
             {luchiniatwork/cambada {:mvn/version "1.0.0"}}
