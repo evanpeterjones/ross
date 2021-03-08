@@ -12,20 +12,18 @@
   "convert transformer
   decomplects the idea of transforming the data depending on the data"
   ([f x](cnv f x nil))
-  ([f x tfx]
-   (if tfx
-     (f (tfx x))
-     (f x))))
+  ([f x tfx] nil))
 
 (def feed-str (:body feed-data))
 
 (defn zip-str [s]
   (let [res (xml/parse s)]
-    (if []))
+    (if true nil))
   (zip/xml-zip))
 
 (defn -main [& args]
-  (println "Hello World!"))
+  (time (println "Hello World!")))
+
 
 (def xml "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <rss version=\"2.0\"
