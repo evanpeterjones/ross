@@ -24,7 +24,6 @@
 (defn -main [& args]
   (time (println "Hello World!")))
 
-
 (def xml "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <rss version=\"2.0\"
     xmlns:googleplay=\"http://www.google.com/schemas/play-podcasts/1.0\"
