@@ -11,7 +11,7 @@
 (defn cnv
   "convert transformer
   decomplects the idea of transforming the data depending on the data"
-  ([f x](cnv f x nil))
+  ([f x] (cnv f x nil))
   ([f x tfx] nil))
 
 (def feed-str (:body feed-data))
