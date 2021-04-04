@@ -46,7 +46,7 @@
    (reitit-ring/router
     [["/" {:get {:handler index-handler}}
       ["/:rss" {:get {:handler index-handler
-                      :parameters {:query {:rss string?}}}}]]])
+                      :path-params {:rss string?}}}]]])
    (reitit-ring/routes
     (reitit-ring/create-resource-handler {:path "/" :root "/public"})
     (reitit-ring/create-default-handler))))
